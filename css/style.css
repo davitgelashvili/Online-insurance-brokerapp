@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.main-slider {
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-slider__item {
+  width: 100%;
+  height: 100vw;
+  max-height: 560px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-slider__item--text {
+  width: 50%;
+  padding: 100px;
+}
+
+.main-slider__desc {
+  font-size: 16;
+}
+
+.main-slider__desc--head {
+  color: #343643;
+}
+
+.main-slider__desc--footer {
+  color: #9495A5;
+}
+
+.main-slider__title {
+  padding: 20px 0;
+  color: #343643;
+  font-size: 34px;
+}
+
+.main-slider__detail {
+  margin-top: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.main-slider__detail--link {
+  padding: 17px 30px;
+  border-radius: 8px;
+  border: 1px solid #9495A5;
+  text-decoration: none;
+  font-size: 16px;
+  color: #343643;
+}
+
+.main-slider__detail--link img {
+  margin-left: 15px;
+}
+
+.main-slider__dots {
+  bottom: 70px;
+  left: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-slider__dots--item {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: #9495A5;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.main-slider__dots--item.active {
+  border: 1px solid #9495A5;
+  color: #343643;
+}
+
+.header {
+  width: 100%;
+  height: 124px;
+  background-color: #fff;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
+}
+
+.header.active {
+  -webkit-box-shadow: 0px 3px 20px rgba(151, 153, 193, 0.13);
+          box-shadow: 0px 3px 20px rgba(151, 153, 193, 0.13);
+}
+
+.header__menu {
+  height: 100%;
+}
+
+.header__menu--item {
+  margin-right: 42px;
+  list-style: none;
+}
+
+.header__menu--link {
+  color: #343643;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.header__lang {
+  padding: 0 30px;
+  border-left: 1px solid #C9CAD2;
+  list-style: none;
+}
+
+.header__login {
+  margin-left: 10px;
+  list-style: none;
+}
+
+.header__login--btn {
+  padding: 19px 38px;
+  border-radius: 8px;
+  border: 1px solid #7948CE;
+  text-decoration: none;
+  font-size: 14px;
+  color: #7948CE;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
