@@ -17,6 +17,20 @@ function workSlider(){
     })
 
 }
+function partnersSlider(){
+    $('.partners-slider-js').owlCarousel({
+        margin:0,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:6,
+            }
+        }
+    })
+}
 $(document).ready(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {
@@ -25,6 +39,17 @@ $(document).ready(function(){
             $('.header').removeClass("active");
         }
     });
+
+    $('.pass-hide').on( 'click', function() {
+        $(this).hide();
+        $('.pass-show').show();
+        $('.showpassword')[0].type='text';
+    })
+    $('.pass-show').on( 'click', function() {
+        $(this).hide();
+        $('.pass-hide').show();
+        $('.showpassword')[0].type='password';
+    })
 });
 
 

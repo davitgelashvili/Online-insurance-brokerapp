@@ -1,0 +1,31 @@
+.calc {
+    padding: 19px 47px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+
+    &__input {
+        width: 100%;
+        padding: 20px 30px;
+        background-color: #F8F8F8;
+        border-radius: 8px;
+        color: #9495A5;
+        font-size: 14px;
+        border: none;
+        outline: none;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 30px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}

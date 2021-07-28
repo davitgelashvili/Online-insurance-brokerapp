@@ -6,3 +6,23 @@
 body {
     background-color: #FFFFFF;
 }
+
+.btn {
+    width: 100%;
+    border-radius: 8px;
+
+    &--blue {
+        background-color: #7948CE;
+        color: #fff;
+    }
+
+    &--light {
+        background-color: #fff;
+        color: #7948CE;
+    }
+}
+
+.title {
+    color: #343643;
+    font-size: 24px;
+}
