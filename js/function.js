@@ -19,7 +19,7 @@ function workSlider(){
 }
 function partnersSlider(){
     $('.partners-slider-js').owlCarousel({
-        margin:0,
+        margin: '50px',
         responsiveClass: true,
         responsive:{
             0:{
@@ -27,6 +27,26 @@ function partnersSlider(){
             },
             600:{
                 items:6,
+            }
+        }
+    })
+}
+function newsSlider(){
+    $('.news-slider-js').owlCarousel({
+        loop:false,
+        nav:true,
+        margin:50,
+        stagePadding: 0,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:4,
             }
         }
     })
