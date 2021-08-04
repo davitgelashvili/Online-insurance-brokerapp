@@ -20,6 +20,9 @@ a:focus, a:hover {
     outline: unset;
     border: unset;
 }
+.btn.focus, .btn:focus, .btn:hover {
+    color: 'unset';
+}
 .btn {
     width: 100%;
     border-radius: 8px;
@@ -27,11 +30,19 @@ a:focus, a:hover {
     &--blue {
         background-color: #7948CE;
         color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
     }
 
     &--light {
         background-color: #fff;
         color: #7948CE;
+
+        &:hover {
+            color: #7948CE;
+        }
     }
 }
 
