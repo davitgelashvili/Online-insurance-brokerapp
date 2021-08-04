@@ -8,6 +8,18 @@ body {
     overflow-x: hidden;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-align: left;
+}
+a:focus, a:hover {
+    color: unset;
+    text-decoration: unset;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: unset;
+    border: unset;
+}
 .btn {
     width: 100%;
     border-radius: 8px;
@@ -26,4 +38,7 @@ body {
 .title {
     color: #343643;
     font-size: 24px;
+}
+.section-title {
+    margin-bottom: 59px;
 }
