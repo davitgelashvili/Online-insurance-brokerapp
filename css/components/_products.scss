@@ -1,4 +1,10 @@
 .products {
+    margin-bottom: 100px;
+
+    &__page {
+        margin-top: 55px;
+    }
+
     &__title {
         display: block;
     }
@@ -16,6 +22,7 @@
     &__item {
         display: block;
         padding: 90px 50px;
+        margin-bottom: 15px;
         background-color: #fff;
         text-decoration: none;
         border-radius: 14px;

@@ -1,34 +1,52 @@
 @font-face {
-  font-family: 'firago';
-  src: url('../fonts/FiraGO-Regular.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'firago Bold';
-  src: url('../fonts/FiraGO-Bold.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'firago medium';
-  src: url('../fonts/FiraGO-Medium.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'firago cam';
-  src: url('../fonts/FiraGO-Regular.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'firago cam Bold';
-  src: url('../fonts/FiraGO-Bold.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'helvetica';
-  src: url('../fonts/helvetica.ttf');
-}
-
-@font-face {
   font-family: 'helvetica-bold';
-  src: url('../fonts/helvetica-bold.ttf');
+  src: url('../../../fonts/helvetica-bold.ttf');
+}
+
+@font-face {
+  font-family: 'helvetica-medium';
+  src: url('../../../fonts/helvetica-medium.ttf');
+}
+
+@font-face {
+  font-family: 'helvetica-roman';
+  src: url('../../../fonts/helvetica-roman.ttf');
+}
+
+@font-face {
+  font-family: 'helvetica-caps-bold';
+  src: url('../../../fonts/helvetica-caps-bold.ttf');
+}
+
+@font-face {
+  font-family: 'helvetica-caps-medium';
+  src: url('../../../fonts/helvetica-caps-medium.ttf');
+}
+
+@font-face {
+  font-family: 'helvetica-caps-roman';
+  src: url('../../../fonts/helvetica-caps-roman.ttf');
+}
+.h-bold{
+  font-family: 'helvetica-bold';
+}
+
+.h-medium{
+  font-family: 'helvetica-medium';
+}
+
+.h-roman{
+  font-family: 'helvetica-roman';
+}
+
+.caps-bold{
+  font-family: 'helvetica-caps-bold';
+}
+
+.caps-medium{
+  font-family: 'helvetica-caps-medium';
+}
+
+.caps-roman{
+  font-family: 'helvetica-caps-roman';
 }

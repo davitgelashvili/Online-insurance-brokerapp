@@ -4,4 +4,61 @@
     border-radius: 14px;
     overflow: hidden;
     padding: 100px 120px;
+
+    &__form {
+        width: 50%;
+        padding-right: 70px;
+
+        &--selectpicker {
+            width: 100%;
+            margin-left: 20px;
+        }
+        
+        &--textarea {
+            margin-top: 14px;
+            resize: none;
+        }
+
+        &--input {
+            width: 100%;
+            background-color: #fff;
+            padding: 19px 30px;
+            border-radius: 8px !important;
+            overflow: hidden;
+            outline: none;
+            border: none;
+
+            &--text {
+                color: #9495A5 !important;
+                font-size: 14px;
+            }
+        }
+
+        &--button {
+            margin-top: 40px;
+            padding: 17px 82px;
+            color: #fff;
+            font-size: 16px;
+            background-color: #343643;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__text {
+        width: 50%;
+        padding-left: 70px;
+
+        &--title {
+            margin-bottom: 40px;
+            color: #343643;
+            font-size: 34px;
+        }
+
+        &--desc {
+            color: #9495A5;
+            font-size: 16px;
+        }
+    }
 }

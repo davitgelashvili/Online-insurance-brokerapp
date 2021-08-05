@@ -1,0 +1,39 @@
+.footer {
+    padding: 59px 0;
+
+    &__text {
+        margin-top: 29px;
+        color: #9495A5;
+        font-size: 16px;
+
+        &--by {
+            a {
+                color: #343643;
+            }
+        }
+    }
+
+    &__soc {
+        &--item {
+            list-style: none;
+        }
+        &--link {
+            text-decoration: none;
+        }
+    }
+    
+    &__menu {
+        margin-top: 29px;
+
+        &--item {
+            margin-left: 24px;
+            list-style: none;
+        }
+
+        &--link {
+            color: #9495A5;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+}
