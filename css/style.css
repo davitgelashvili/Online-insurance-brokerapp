@@ -59,6 +59,10 @@ a:focus, a:hover {
   margin-bottom: 59px;
 }
 
+.page__title {
+  margin-top: 77px;
+}
+
 .main-slider {
   display: block;
   margin-top: 50px;
@@ -277,7 +281,7 @@ a:focus, a:hover {
   padding: 4px 6px;
 }
 
-.login__text {
+.login__text1 {
   color: #B6B8B8;
   font-size: 14px;
   position: absolute;
@@ -538,6 +542,12 @@ a:focus, a:hover {
   margin-bottom: 100px;
 }
 
+.products__cover {
+  height: 100vw;
+  max-height: 376px;
+  background-size: cover;
+}
+
 .products__page {
   margin-top: 55px;
 }
@@ -586,6 +596,13 @@ a:focus, a:hover {
           box-shadow: 0px 6px 54px rgba(151, 153, 193, 0.16);
 }
 
+.products__detail--btn {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 78px;
+  padding: 17px 0;
+}
+
 .news-slider {
   position: relative;
   width: 100%;
@@ -601,6 +618,7 @@ a:focus, a:hover {
 .news-slider__item--img {
   width: 100%;
   height: 240px;
+  margin-bottom: 39px;
 }
 
 .news-slider__item--img img {
@@ -608,6 +626,23 @@ a:focus, a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.news-slider__item--date {
+  color: #9495A5;
+  font-size: 14px;
+}
+
+.news-slider__item--title {
+  margin-top: 9px;
+  color: #343643;
+  font-size: 16px;
+}
+
+.news-slider__item--desc {
+  margin-top: 20px;
+  color: #5D5E69;
+  font-size: 14px;
 }
 
 .consultation {
@@ -676,6 +711,277 @@ a:focus, a:hover {
   font-size: 16px;
 }
 
+.offer {
+  margin-top: 60px;
+}
+
+.offer__item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  display: block;
+}
+
+.offer__item--status {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -4px;
+  background-color: #7948CE;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.offer__item--status img {
+  margin-right: 6px;
+}
+
+.offer__item--status:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  display: block;
+  background-color: #7948CE;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 0 50%);
+}
+
+:hover > .offer__item--status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__item--figure {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 27px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+
+.offer__item--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offer__item--price {
+  margin-bottom: 13px;
+  color: #343643;
+  font-size: 30px;
+}
+
+.offer__item--title {
+  margin-bottom: 11px;
+  color: #343643;
+  font-size: 18px;
+}
+
+.offer__item--desc {
+  margin-bottom: 32px;
+  color: #5D5E69;
+  font-size: 16px;
+}
+
+.offer__item--btn {
+  width: 180px;
+  padding: 15px 0;
+  background-color: transparent;
+  border: 1px solid #5D5E69;
+  color: #343643;
+  font-size: 16px;
+}
+
+.offer__item--btn:hover {
+  background-color: #343643;
+  color: #fff;
+}
+
+.offer__support {
+  padding: 18px 38px;
+  background-color: rgba(121, 72, 206, 0.1);
+  border-radius: 8px;
+  color: #7948CE;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.offer__support img {
+  margin-right: 13px;
+}
+
+.offer-detail {
+  margin-top: 60px;
+}
+
+.offer-detail__item {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+  display: block;
+}
+
+.offer-detail__item--status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  left: -4px;
+  background-color: #7948CE;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.offer-detail__item--status img {
+  margin-right: 6px;
+}
+
+.offer-detail__item--status:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  display: block;
+  background-color: #7948CE;
+  -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 0 50%);
+          clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 0 50%);
+}
+
+.offer-detail__item--figure {
+  width: 100%;
+  height: 100vw;
+  max-height: 400px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.offer-detail__item--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.offer-detail__item--price {
+  color: #343643;
+  font-size: 41px;
+}
+
+.offer-detail__item--title {
+  margin-top: 17px;
+  color: #343643;
+  font-size: 24px;
+}
+
+.offer-detail__item--desc {
+  margin-top: 39px;
+  margin-bottom: 78px;
+  color: #5D5E69;
+  font-size: 16px;
+}
+
+.offer-detail__item--btn {
+  width: auto;
+  padding: 17px 53px;
+  margin-right: 42px;
+  font-size: 16px;
+}
+
+.offer-detail__support {
+  padding: 18px 38px;
+  background-color: rgba(121, 72, 206, 0.1);
+  border-radius: 8px;
+  color: #7948CE;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.offer-detail__support img {
+  margin-right: 13px;
+}
+
+.offer-faq {
+  width: 100%;
+  margin-top: 98px;
+}
+
+.offer-faq__item {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.offer-faq__item--head {
+  color: #343643;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.offer-faq__item--head img {
+  margin-left: 21px;
+}
+
+.offer-faq__item--head.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.offer-faq__item--body {
+  display: none;
+  margin-top: 24px;
+  padding-left: 15px;
+}
+
+.offer-faq__item--body.active {
+  display: block;
+}
+
+.offer-faq__item--text {
+  margin-bottom: 16px;
+  color: #5D5E69;
+  font-size: 16px;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+}
+
+.login__cover {
+  width: calc(50% - 97px);
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.login__cover--bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #d8ecff;
+  background: linear-gradient(156deg, #d8ecff 0%, #f9efff 100%);
+}
+
+.login__text {
+  height: 100vh;
+}
+
 .footer {
   padding: 59px 0;
 }
@@ -695,6 +1001,7 @@ a:focus, a:hover {
 }
 
 .footer__soc--link {
+  margin-left: 12px;
   text-decoration: none;
 }
 

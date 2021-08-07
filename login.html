@@ -4,128 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/components/bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="css/components/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/components/fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BROKERAPP</title>
 </head>
 <body>
-    <header class="header d-flex align-items-center">
+    <div class="login">
+        <div class="login__cover">
+            <div class="login__cover--bg"></div>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="header__logo">
-                        <img src="img/logo.png" alt="">
+                <div class="col-6">
+                    <div class="1 d-flex flex-column justify-content-center">
+                        <div class="login__text--head h-medium">
+                            შენზე საუკეთესოდ 
+                            მორგებული..
+                        </div>
+                        <span class="login__text--title caps-bold">
+                            დაზღვევა
+                            მოძებნე <span class="login__text--blue ">აქ..</span>
+                        </span>
+                        <div class="login__text--desc h-roman">
+                            შემთხვევითად გენერირებული ტექსტი და ასევე
+                            დიზაინერებს და ტიპოგრაფიული ნაწარმის 
+                        </div>
                     </div>
                 </div>
-                <div class="col-10 d-flex align-items-center justify-content-end">
-                    <ul class="header__menu d-flex align-items-center">
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link">ჩვენს შესახებ</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link">სადაზღვევო კომპანიები</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link">პროდუქტები</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link">FAQ</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link">კონტაქტი</a>
-                        </li>
-                    </ul>
-                    <li class="header__lang">
-                        <a href="">
-                            <img src="img/svg/language.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="header__login">
-                        <a href="" class="header__login--btn">შესვლას</a>
-                    </li>
+                <div class="col-6">
+                    <form class="login__form">
+                        <div class="login__label-out">
+                            <label class="login__label firago-cam">
+                                <input type="password" class="showpassword login__input firago-cam" required/>
+                                <span class="login__text1">პაროლი</span>
+                                <span class="login__error">error</span>
+                            </label>  
+                            <div class="login__label--icons">
+                                <div class="login__label--icons-item pass">
+                                    <img class="pass-show" src="img/login-icon/pass-show.svg" alt="e">
+                                    <img class="pass-hide" src="img/login-icon/pass-hide.svg" alt="s">
+                                </div>
+                                <div class="login__label--icons-item pass-info">
+                                    <img class="info-hide" src="img/login-icon/info.svg" alt="r">
+                                    <img class="info-show" src="img/login-icon/info-active.svg" alt="t">
+                                    <div class="info-text">
+                                        პაროლი უნდა შედგებოდეს მინიმუმ 8 სიმბოლოსგან
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                    </form>
                 </div>
             </div>
         </div>
-    </header>
-
-    <div class="container">
-        <div class="main-slider">
-            <div class="main-slider-js owl-carousel owl-theme owl-loaded">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage">
-                        <div class="owl-item">
-                            <div class="main-slider__item" style="background-image: url('./img/1.png');">
-                                <div class="main-slider__item--text">
-                                    <h3 class="main-slider__desc main-slider__desc--head">თიბისი დაზღვევა ახლა, აქ</h3>
-                                    <h1 class="main-slider__title">
-                                        საუკეთესო ავტოდაზღვევა 
-                                        გაუმჯობესებული პირობებით
-                                    </h1>
-                                    <h3 class="main-slider__desc main-slider__desc--footer">
-                                        თიბისი დაზღვევა, ავტოდაზღვევა შენთვის გასაგებ ენაზე..  
-                                    </h3>
-                                    <li class="main-slider__detail">
-                                        <a href="" class="main-slider__detail--link d-flex justify-content-between align-items-center">
-                                            სრულად ნახვა
-                                            <img src="img/svg/slider-detail-arrow.svg" alt="">
-                                        </a>
-                                    </li>
-                                </div>
-                            </div>
-                        </div><!-- slider page end  -->
-    
-                        <div class="owl-item">
-                            <div class="main-slider__item" style="background-image: url('./img/1.png');">
-                                <h3 class="main-slider__title ">ori</h3>
-                            </div>
-                        </div><!-- slider page end  -->
-
-                        <div class="owl-item">
-                            <div class="main-slider__item" style="background-image: url('./img/1.png');">
-                                <h3 class="main-slider__title ">sami</h3>
-                            </div>
-                        </div><!-- slider page end  -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-slider__dots owl-dots d-flex align-items-center">
-                <div class="main-slider__dots--item active">01</div>
-                <div class="main-slider__dots--item">02</div>
-                <div class="main-slider__dots--item">03</div>
-            </div><!-- slider dots end -->
-        </div><!-- slider content end -->
     </div>
 
-    <div class="container">
-        <div class="login__label-out">
-            <label class="login__label firago-cam">
-                <input type="password" class="showpassword login__input firago-cam" required/>
-                <span class="login__text">პაროლი</span>
-                <span class="login__error">error</span>
-            </label>  
-            <div class="login__label--icons">
-                <div class="login__label--icons-item pass">
-                    <img class="pass-show" src="img/login-icon/pass-show.svg" alt="e">
-                    <img class="pass-hide" src="img/login-icon/pass-hide.svg" alt="s">
-                </div>
-                <div class="login__label--icons-item pass-info">
-                    <img class="info-hide" src="img/login-icon/info.svg" alt="r">
-                    <img class="info-show" src="img/login-icon/info-active.svg" alt="t">
-                    <div class="info-text">
-                        პაროლი უნდა შედგებოდეს მინიმუმ 8 სიმბოლოსგან
-                    </div>
-                </div>
-            </div>  
-        </div>  
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="js/select/bootstrap-select.js"></script>
     <script src="js/function.js"></script>    
-    <script>
-        workSlider();
-    </script>
 </body>
 </html>

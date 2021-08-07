@@ -11,12 +11,30 @@
         &--img {
             width: 100%;
             height: 240px;
+            margin-bottom: 39px;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+        }
+
+        &--date {
+            color: #9495A5;
+            font-size: 14px;
+        }
+
+        &--title {
+            margin-top: 9px;
+            color: #343643;
+            font-size: 16px;
+        }
+
+        &--desc {
+            margin-top: 20px;
+            color: #5D5E69;
+            font-size: 14px;
         }
     }
 }

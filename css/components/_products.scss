@@ -1,6 +1,12 @@
 .products {
     margin-bottom: 100px;
 
+    &__cover {
+        height: 100vw;
+        max-height: 376px;
+        background-size: cover;
+    }
+
     &__page {
         margin-top: 55px;
     }
@@ -45,6 +51,15 @@
 
         &:hover {
             box-shadow: 0px 6px 54px rgba(151, 153, 193, 0.16);
+        }
+    }
+
+    &__detail {
+        &--btn {
+            max-width: 300px;
+            width: 100%;
+            margin-top: 78px;
+            padding: 17px 0;
         }
     }
 }

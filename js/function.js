@@ -83,6 +83,37 @@ $(document).ready(function(){
         $('.pass-hide').show();
         $('.showpassword')[0].type='password';
     })
+
+
+    $('.offer-faq__item--head').on( 'click', function() {
+        var thisData = this;
+
+        $('.offer-faq__item--body').each(function () {
+            if ($(this).data('body') == $(thisData).data('head')) {
+                $(this).toggleClass('active');
+                if( $(this).hasClass('active') ){
+                    $(this).addClass('active');
+                    $(thisData).addClass('active');
+                }else {
+                    $(this).removeClass('active');
+                    $(thisData).removeClass('active');
+                }
+            }
+        });
+    })
+
+
+    $('.pass-hide').on( 'click', function() {
+        $(this).hide();
+        $('.pass-show').show();
+        $('.showpassword')[0].type='text';
+    })
+    $('.pass-show').on( 'click', function() {
+        $(this).hide();
+        $('.pass-hide').show();
+        $('.showpassword')[0].type='password';
+    })
+
 });
 
 
