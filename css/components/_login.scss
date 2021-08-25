@@ -2,11 +2,17 @@
     width: 100%;
     height: 100vh;
 
+    &__header {
+        width: 100%;
+        position: absolute;
+        padding: 35px 0;
+    }
+
     &__cover {
         width: calc(50% - 97px);
         height: 100%;
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: -1;
 
         &--bg {
@@ -20,9 +26,57 @@
 
     &__text {
         height: 100vh;
+        padding-right: 143px;
+
+        &--head {
+            margin-bottom: 16px;
+            color: #343643;
+            font-size: 18px;
+        }
+
+        &--title {
+            margin-bottom: 36px;
+            color: #343643;
+            font-size: 62px;
+        }
+
+        &--blue {
+            color: #7948CE;
+        }
+
+        &--desc {
+            color: #9495A5;
+            font-size: 18px;
+        }
+
+        &--link-out {
+            position: absolute;
+            bottom: 100px;
+        }
     }
 
     &__form {
-        
+        // height: 100vh;
+        padding-left: 63px;
+
+        &--header {
+            color: #474B4E;
+            font-size: 24px;
+            margin-bottom: 49px;
+        }
+
+        &__label-out {
+            margin-bottom: 24px;
+        }
+
+        &__label {
+            border: 1px solid #DEDFE4;
+            border-radius: 8px;
+        }
+
+        &__input {
+            outline: none;
+            border: none;
+        }
     }
 }

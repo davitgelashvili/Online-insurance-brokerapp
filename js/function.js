@@ -102,17 +102,52 @@ $(document).ready(function(){
         });
     })
 
+    $(".ganvadeba-check").change(function () {
+        if ($(this).is(":checked")) {
+            if ($(this).data('ganvadeba') == true ) {
+                $('.ganvadeba').show()
+            }else {
+                $('.ganvadeba').hide()
+            }
 
-    $('.pass-hide').on( 'click', function() {
-        $(this).hide();
-        $('.pass-show').show();
-        $('.showpassword')[0].type='text';
-    })
-    $('.pass-show').on( 'click', function() {
-        $(this).hide();
-        $('.pass-hide').show();
-        $('.showpassword')[0].type='password';
-    })
+        } else {
+            $('.ganvadeba').hide()
+        }
+    });
+
+    
+
+    // $('.insurance__tab--item').on( 'click', function() {
+    //     var thisData = this;
+    //     $(thisData).addClass('active')
+    //     $(this).each(function (e) {
+    //         console.log(e)
+    //     });
+    //     // $(this).find('tab-js-active').addClass('active')
+
+    // })
+
+    // $('.pass-hide').on( 'click', function() {
+    //     $(this).hide();
+    //     $('.pass-show').show();
+    //     $('.showpassword')[0].type='text';
+    // })
+    // $('.pass-show').on( 'click', function() {
+    //     $(this).hide();
+    //     $('.pass-hide').show();
+    //     $('.showpassword')[0].type='password';
+    // })
+
+
+
+
+
+
+
+
+
+
+
 
 });
 

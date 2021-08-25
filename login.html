@@ -13,13 +13,18 @@
 </head>
 <body>
     <div class="login">
+        <div class="login__header">
+            <div class="container">
+                <img src="img/main_logo.png" alt="" class="login__header--logo">
+            </div>
+        </div>
         <div class="login__cover">
             <div class="login__cover--bg"></div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <div class="1 d-flex flex-column justify-content-center">
+                    <div class="login__text d-flex flex-column justify-content-center">
                         <div class="login__text--head h-medium">
                             შენზე საუკეთესოდ 
                             მორგებული..
@@ -32,30 +37,25 @@
                             შემთხვევითად გენერირებული ტექსტი და ასევე
                             დიზაინერებს და ტიპოგრაფიული ნაწარმის 
                         </div>
+                        <span class="login__text--link-out h-roman">
+                            ჯერ არ ხარ რეგისტრირებული? <a href="" class="login__text--link ">რეგისტრაცია</a>
+                        </span>
                     </div>
                 </div>
-                <div class="col-6">
-                    <form class="login__form">
-                        <div class="login__label-out">
-                            <label class="login__label firago-cam">
-                                <input type="password" class="showpassword login__input firago-cam" required/>
-                                <span class="login__text1">პაროლი</span>
-                                <span class="login__error">error</span>
-                            </label>  
-                            <div class="login__label--icons">
-                                <div class="login__label--icons-item pass">
-                                    <img class="pass-show" src="img/login-icon/pass-show.svg" alt="e">
-                                    <img class="pass-hide" src="img/login-icon/pass-hide.svg" alt="s">
-                                </div>
-                                <div class="login__label--icons-item pass-info">
-                                    <img class="info-hide" src="img/login-icon/info.svg" alt="r">
-                                    <img class="info-show" src="img/login-icon/info-active.svg" alt="t">
-                                    <div class="info-text">
-                                        პაროლი უნდა შედგებოდეს მინიმუმ 8 სიმბოლოსგან
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
+                <div class="col-6 d-flex align-items-center">
+                    <form class="login__form d-flex flex-column">
+                        <h1 class="login__form--header caps-medium">გაიარე ავტორიზაცია</h1>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="ელ-ფოსტა">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <input type="password" class="login__input h-roman" placeholder="პაროლი">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <button class="login__btn btn btn--blue caps-medium">ავტორიზაცია</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -1,0 +1,105 @@
+.insurance {
+    &__tab {
+        max-width: 546px;
+        width: 100%;
+
+        &--item {
+            height: 109px;
+            position: relative;
+
+            &.active {
+                .insurance__tab--num-in {
+                    width: 54px;
+                    height: 54px;
+                    border: 1px solid #7948CE;
+                    color: #7948CE;
+                }
+
+                .insurance__tab--title {
+                    color: #343643;
+                    font-size: 20px;
+                }
+
+                // .insurance__tab--line {
+                //     background-color: #7948CE;
+                // }
+            }
+        }
+
+        &--num-out {
+            position: relative;
+            height: 100%;
+        }
+
+        &--num {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+        }
+
+        &--num-in {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid #DEDFE4;
+            background-color: #fff;
+            color: #9495A5;
+            font-size: 18px;
+        }
+
+        &--line {
+            width: 1px;
+            height: 100%;
+            background-color: #DEDFE4;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        &--title {
+            padding-top: 12px;
+            padding-left: 40px;
+            color: #9495A5;
+            font-size: 18px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        padding-left: 43px;
+
+        &--btn {
+            border: 1px solid #7948CE;
+        }
+    }
+}
+.tab {
+    display: none;
+}
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+  .ganvadeba {
+      display: none;
+  }

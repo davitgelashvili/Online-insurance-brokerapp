@@ -30,6 +30,7 @@ a:focus, a:hover {
 .btn {
   width: 100%;
   border-radius: 8px;
+  border: none;
 }
 
 .btn--blue {
@@ -173,137 +174,32 @@ a:focus, a:hover {
   max-height: 100%;
 }
 
-.login__label {
-  position: relative;
-}
-
-.login__label.error .login__text {
-  color: #FC5183;
-}
-
-.login__label.error .login__input {
-  border: 1px solid #FC5183;
-}
-
-.login__label--icons {
-  position: absolute;
-  right: 40px;
-  top: 18px;
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login__label--icons-item {
-  cursor: pointer;
-  margin-left: 12px;
-}
-
-.login__label--icons-item.pass .pass-show {
-  display: none;
-}
-
-.login__label--icons-item .info-text {
-  display: none;
-  -webkit-box-shadow: 0px 3px 16px rgba(151, 153, 193, 0.16);
-          box-shadow: 0px 3px 16px rgba(151, 153, 193, 0.16);
-  position: absolute;
-  bottom: 50px;
-  width: 270px;
-  height: 80px;
-  padding: 18px 35px;
-  background: #fff;
-  color: #929495;
-  font-size: 14px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  left: -130px;
-}
-
-.login__label--icons-item .info-text:before {
-  content: "";
-  position: absolute;
-  bottom: -22px;
-  margin-left: 53px;
-  width: 23px;
-  height: 23px;
-  display: block;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-          clip-path: polygon(50% 100%, 0 0, 100% 0);
-  -webkit-box-shadow: 0px 3px 16px rgba(151, 153, 193, 0.16);
-          box-shadow: 0px 3px 16px rgba(151, 153, 193, 0.16);
-  background-color: #fff;
-}
-
-.login__label--icons-item.pass-info .info-show {
-  display: none;
-}
-
-.login__label--icons-item.pass-info:hover .info-hide {
-  display: none;
-}
-
-.login__label--icons-item.pass-info:hover .info-show {
-  display: block;
-}
-
-.login__label--icons-item.pass-info:hover .info-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.login__label-out {
+.login__select {
+  width: 100%;
   margin-bottom: 24px;
 }
 
-.login__input {
+.login__select--btn {
   width: 100%;
-}
-
-.login__input:focus {
-  border: 1px solid #929495;
-}
-
-.login__input:focus ~ .login__text,
-.login__input:not(:focus):valid ~ .login__text {
   background-color: #fff;
-  font-size: 11px;
-  opacity: 1;
-  top: -25px;
-  left: 18px;
-  padding: 4px 6px;
+  border: 1px solid #DEDFE4;
+  border-radius: 8px !important;
+  padding: 19px 30px;
+  overflow: hidden;
 }
 
-.login__text1 {
-  color: #B6B8B8;
-  font-size: 14px;
-  position: absolute;
-  pointer-events: none;
-  -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
-  top: 0;
-  left: 24px;
-}
-
-.login__select {
-  color: #B6B8B8;
+.login__select--text {
+  color: #9495A5;
   font-size: 14px;
 }
 
-.login__error {
-  color: #FC5183;
-  display: none;
+.login__select--item {
+  color: #9495A5;
+  font-size: 14px;
 }
 
-.login__error.active {
-  display: block;
+.login__check {
+  margin-top: 25px;
 }
 
 .login__check--input {
@@ -312,11 +208,11 @@ a:focus, a:hover {
   cursor: pointer;
   height: 0;
   width: 0;
-  background-color: grey;
+  background-color: #DEDFE4;
 }
 
 .login__check--input:checked ~ .login__check--checked {
-  border: 1px solid #1997E2;
+  border: 1px solid #7948CE;
 }
 
 .login__check--input:checked ~ .login__check--checked img {
@@ -336,8 +232,8 @@ a:focus, a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  border: 1px solid #DAD9D3;
-  border-radius: 4px;
+  border: 1px solid #DEDFE4;
+  border-radius: 3px;
 }
 
 .login__check--checked img {
@@ -352,13 +248,19 @@ a:focus, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #B6B8B8;
+  color: #9495A5;
+  font-size: 16px;
 }
 
 .login__check--text a {
   margin-left: 5px;
-  color: #1997E2;
+  color: #7948CE;
   text-decoration: none;
+}
+
+.login__radio {
+  margin-bottom: 24px;
+  margin-right: 26px;
 }
 
 .login__radio--input {
@@ -371,7 +273,7 @@ a:focus, a:hover {
 }
 
 .login__radio--input:checked ~ .login__radio--radioed {
-  border: 4px solid #1997E2;
+  border: 3px solid #7948CE;
 }
 
 .login__radio--radioed {
@@ -387,19 +289,20 @@ a:focus, a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  border: 1px solid #DAD9D3;
+  border: 1px solid #9495A5;
   border-radius: 50%;
 }
 
 .login__radio--text {
-  margin-left: 10px;
+  margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #B6B8B8;
+  color: #5D5E69;
+  font-size: 16px;
 }
 
 .login__radio--text a {
@@ -408,37 +311,22 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
-.login__send {
+.login__input {
   width: 100%;
-  padding: 16px 0;
-  margin-top: 40px;
-  background-color: #1997E2;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 17px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.login__footer {
-  width: 100%;
-  margin-top: 35px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.login__question {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.login__question a {
-  color: #1997E2;
+  padding: 19px 30px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border: 1px solid #DEDFE4;
+  border-radius: 8px !important;
+  color: #9495A5;
   font-size: 14px;
-  text-decoration: none;
+  outline: none;
+}
+
+.login__btn {
+  margin-top: 36px;
+  padding: 18px 0;
+  font-size: 16px;
 }
 
 .header {
@@ -962,11 +850,17 @@ a:focus, a:hover {
   height: 100vh;
 }
 
+.login__header {
+  width: 100%;
+  position: absolute;
+  padding: 35px 0;
+}
+
 .login__cover {
   width: calc(50% - 97px);
   height: 100%;
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
 
@@ -980,6 +874,156 @@ a:focus, a:hover {
 
 .login__text {
   height: 100vh;
+  padding-right: 143px;
+}
+
+.login__text--head {
+  margin-bottom: 16px;
+  color: #343643;
+  font-size: 18px;
+}
+
+.login__text--title {
+  margin-bottom: 36px;
+  color: #343643;
+  font-size: 62px;
+}
+
+.login__text--blue {
+  color: #7948CE;
+}
+
+.login__text--desc {
+  color: #9495A5;
+  font-size: 18px;
+}
+
+.login__text--link-out {
+  position: absolute;
+  bottom: 100px;
+}
+
+.login__form {
+  padding-left: 63px;
+}
+
+.login__form--header {
+  color: #474B4E;
+  font-size: 24px;
+  margin-bottom: 49px;
+}
+
+.login__form__label-out {
+  margin-bottom: 24px;
+}
+
+.login__form__label {
+  border: 1px solid #DEDFE4;
+  border-radius: 8px;
+}
+
+.login__form__input {
+  outline: none;
+  border: none;
+}
+
+.insurance__tab {
+  max-width: 546px;
+  width: 100%;
+}
+
+.insurance__tab--item {
+  height: 109px;
+  position: relative;
+}
+
+.insurance__tab--item.active .insurance__tab--num-in {
+  width: 54px;
+  height: 54px;
+  border: 1px solid #7948CE;
+  color: #7948CE;
+}
+
+.insurance__tab--item.active .insurance__tab--title {
+  color: #343643;
+  font-size: 20px;
+}
+
+.insurance__tab--num-out {
+  position: relative;
+  height: 100%;
+}
+
+.insurance__tab--num {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.insurance__tab--num-in {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #DEDFE4;
+  background-color: #fff;
+  color: #9495A5;
+  font-size: 18px;
+}
+
+.insurance__tab--line {
+  width: 1px;
+  height: 100%;
+  background-color: #DEDFE4;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.insurance__tab--title {
+  padding-top: 12px;
+  padding-left: 40px;
+  color: #9495A5;
+  font-size: 18px;
+}
+
+.insurance__form {
+  width: 100%;
+  padding-left: 43px;
+}
+
+.insurance__form--btn {
+  border: 1px solid #7948CE;
+}
+
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+.ganvadeba {
+  display: none;
 }
 
 .footer {
