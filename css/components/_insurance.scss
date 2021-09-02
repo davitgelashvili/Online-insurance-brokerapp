@@ -77,10 +77,47 @@
 }
 .tab {
     display: none;
+
+    &__title {
+        margin-bottom: 28px;
+        color: #343643;
+        font-size: 18px;
+    }
+
+    &__item {
+        margin-bottom: 23px;
+
+        &--title {
+            color: #9495A5;
+            font-size: 14px;
+        }
+
+        &--desc {
+            color: #343643;
+            font-size: 16px;
+        }
+
+        &--sms {
+            position: relative;
+        }
+
+        &--sms-btn {
+            position: absolute;
+            right: 22px;
+            color: #7948CE;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        &--sms-input {
+            margin-bottom: 0;
+            color: #9495A5;
+            font-size: 14px;
+        }
+    }
 }
   
-  /* Make circles that indicate the steps of the form: */
-  .step {
+.step {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -89,17 +126,39 @@
     border-radius: 50%;
     display: inline-block;
     opacity: 0.5;
-  }
-  
-  .step.active {
-    opacity: 1;
-  }
-  
-  /* Mark the steps that are finished and valid: */
-  .step.finish {
-    background-color: #04AA6D;
-  }
+}
 
-  .ganvadeba {
-      display: none;
-  }
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.ganvadeba {
+    display: none;
+}
+
+.add-drive {
+    display: flex;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #7948CE;
+    font-size: 16px;
+
+    img {
+        margin-right: 6px;
+    }
+}
+
+.driver-form {
+    margin-bottom: 30px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

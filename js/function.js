@@ -47,8 +47,10 @@ function partnersSlider(){
 function newsSlider(){
     $('.news-slider-js').owlCarousel({
         loop:false,
-        nav:true,
+        nav:false,
+        navText: [" "," "],
         margin:50,
+        dots: false,
         stagePadding: 0,
         responsiveClass:true,
         responsive:{
@@ -63,7 +65,18 @@ function newsSlider(){
             }
         }
     })
+
+    var owl = $('.owl-carousel');
+
+    $('.news-slider--next').click(function() {
+        owl.trigger('next.owl.carousel');
+    })
+
+    $('.news-slider--prev').click(function() {
+        owl.trigger('prev.owl.carousel');
+    })
 }
+
 $(document).ready(function(){
     $(window).scroll(function() {
         if ($(this).scrollTop() > 10) {
@@ -115,39 +128,29 @@ $(document).ready(function(){
         }
     });
 
-    
+    $('.add-drive').on( 'click', function(e) {
+        e.preventDefault();
+        var thisData = this;
+        $(thisData).hide();
+        $('.driver-form').each(function () {
+            if ($(this).data('driver') == $(thisData).data('driver')) {
+                $(this).show();
+            }
+        });
+    })
 
-    // $('.insurance__tab--item').on( 'click', function() {
-    //     var thisData = this;
-    //     $(thisData).addClass('active')
-    //     $(this).each(function (e) {
-    //         console.log(e)
-    //     });
-    //     // $(this).find('tab-js-active').addClass('active')
-
-    // })
-
-    // $('.pass-hide').on( 'click', function() {
-    //     $(this).hide();
-    //     $('.pass-show').show();
-    //     $('.showpassword')[0].type='text';
-    // })
-    // $('.pass-show').on( 'click', function() {
-    //     $(this).hide();
-    //     $('.pass-hide').show();
-    //     $('.showpassword')[0].type='password';
-    // })
-
-
-
-
-
-
-
-
-
-
-
+    $(".registration-user").change(function () {
+        var thisData = this;
+        if ($(thisData).is(":checked")) {
+            $('.registration-user-tab').each(function () {
+                if ($(this).data('registration') == $(thisData).data('registration')) {
+                    $(this).css('display','flex')
+                }else {
+                    $(this).css('display','none')
+                }
+            });
+        }
+    });
 
 });
 

@@ -19,7 +19,10 @@
             </div>
         </div>
         <div class="login__cover">
-            <div class="login__cover--bg"></div>
+            <div class="login__cover--bg">
+                <img src="img/svg/ambrela-top.svg" alt="">
+                <img src="img/svg/ambrela-bottom.svg" alt="">
+            </div>
         </div>
         <div class="container">
             <div class="row">
@@ -49,7 +52,7 @@
                             <div class="col-12 d-flex align-items-center">
                                 <label class="login__radio d-flex firago-cam">
                                     <div>
-                                        <input type="radio" class="login__radio--input" name="piri" checked>
+                                        <input type="radio" class="login__radio--input registration-user" name="piri" data-registration="0" checked>
                                         <span class="login__radio--radioed">
                                         </span>
                                     </div>
@@ -60,7 +63,7 @@
 
                                 <label class="login__radio d-flex firago-cam">
                                     <div>
-                                        <input type="radio" class="login__radio--input" name="piri">
+                                        <input type="radio" class="login__radio--input registration-user" data-registration="1" name="piri">
                                         <span class="login__radio--radioed">
                                         </span>
                                     </div>
@@ -69,6 +72,8 @@
                                     </span>
                                 </label>
                             </div><!-- item end -->
+                        </div>
+                        <div class="row registration-user-tab" data-registration="0" style="display: flex;">
                             <div class="col-6">
                                 <input type="text" class="login__input h-roman" placeholder="სახელი">
                             </div><!-- item end -->
@@ -77,6 +82,9 @@
                             </div><!-- item end -->
                             <div class="col-12">
                                 <input type="text" class="login__input h-roman" placeholder="პირადი ნომერი">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="ტელეფონის ნომერი">
                             </div><!-- item end -->
                             <div class="col-12">
                                 <input type="text" class="login__input h-roman" placeholder="ელ-ფოსტა">
@@ -104,7 +112,44 @@
                             <div class="col-12">
                                 <button class="login__btn btn btn--blue caps-medium">რეგისტრაცია</button>
                             </div><!-- item end -->
-                        </div>
+                        </div><!-- first tab registration end -->
+                        <div class="row registration-user-tab" data-registration="1">
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="დასახელება">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="საიდენტიფიკაციო კოდი">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="ტელეფონის ნომერი">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <input type="text" class="login__input h-roman" placeholder="ელ-ფოსტა">
+                            </div><!-- item end -->
+                            <div class="col-6">
+                                <input type="password" class="login__input h-roman" placeholder="პაროლი">
+                            </div><!-- item end -->
+                            <div class="col-6">
+                                <input type="password" class="login__input h-roman" placeholder="გაიმეორე პაროლი">
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <label class="login__check d-flex firago-cam">
+                                    <div>
+                                        <input type="checkbox" class="login__check--input">
+                                        <span class="login__check--checked">
+                                            <img src="./img/svg/checkbox.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <span class="login__check--text h-roman">
+                                        ვეთანხმები 
+                                        <a href="">წესებს და პირობებს</a>
+                                    </span>
+                                </label>
+                            </div><!-- item end -->
+                            <div class="col-12">
+                                <button class="login__btn btn btn--blue caps-medium">რეგისტრაცია</button>
+                            </div><!-- item end -->
+                        </div><!-- second end -->
                     </form>
                 </div>
             </div>

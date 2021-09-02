@@ -1,0 +1,86 @@
+.about {
+    &__text {
+        color: #5D5E69;
+        font-size: 16px;
+    }
+}
+
+.team {
+    margin-top: 116px;
+
+    &__item {
+        width: 100%;
+        margin-bottom: 99px;
+
+        &--cover {
+            width: 100%;
+            max-height: 330px;
+            height: 100%;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--title {
+            margin-top: 28px;
+            color: #343643;
+            font-size: 18px;
+        }
+
+        &--desc {
+            margin-top: 8px;
+            color: #5D5E69;
+            font-size: 14px;
+        }
+    }
+
+    &__detail {
+        &--item {
+            margin-bottom: 39px;
+        }
+
+        &--cover {
+            max-height: 560px;
+            height: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--linked {
+            margin-top: 26px;
+            color: #000;
+            font-size: 14px;
+
+            img {
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+.company {
+    &__item {
+        width: 100%;
+
+        &--cover {
+            width: 100%;
+            max-height: 260px; 
+            height: 100vw;
+
+            img {
+                display: block;
+            }
+        }
+    }
+}
