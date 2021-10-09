@@ -1,6 +1,11 @@
 .products {
     margin-bottom: 100px;
 
+    &__container {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
+
     &__cover {
         height: 100vw;
         max-height: 376px;
@@ -27,8 +32,8 @@
 
     &__item {
         display: block;
-        padding: 90px 50px;
-        margin-bottom: 15px;
+        padding: 90px 70px;
+        margin: 0 20px 30px 20px;
         background-color: #fff;
         text-decoration: none;
         border-radius: 14px;
@@ -60,6 +65,17 @@
             width: 100%;
             margin-top: 78px;
             padding: 17px 0;
+        }
+
+        &--item {
+            padding: 70px 0 100px 100px;
+            width: 100%;
+            max-width: 679px;
+        }
+
+        &--title {
+            font-size: 30px;
+            padding: 67px 0 18px 0;
         }
     }
 }

@@ -74,6 +74,75 @@
             border: 1px solid #7948CE;
         }
     }
+
+    &__info {
+        background-color: #fff;
+        padding: 48px 35px;
+        margin-left: -35px;
+        margin-right: -35px;
+        border: 8px;
+        border-bottom: 1px solid #DEDFE4;
+
+        svg {
+            stroke: #343643;
+            margin-right: 27px;
+            transform: rotate(-90deg);
+            margin-top: 8px;
+        }
+
+        &.active {
+            box-shadow: 0px 6px 54px rgba(151, 153, 193, 0.16);
+
+            svg {
+                stroke: #7948CE;
+                transform: rotate(0deg);
+            }
+        }
+
+        &--item {
+            width: 100%;
+        }
+
+        &--head {
+            color: #343643;
+            font-size: 18px;
+
+            &.active {
+                color: #7948CE;
+            }
+        }
+
+        &--body-in {
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        &--body {
+            display: none;
+            padding-top: 12px;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        &--title {
+            color: #9495A5;
+            font-size: 14px;
+        }
+
+        &--desc {
+            max-width: 60%;
+            color: #343643;
+            font-size: 16px;
+            text-align: right;
+
+            a {
+                color: #7948CE;
+                text-decoration: none;
+            }
+        }
+    }
 }
 .tab {
     display: none;
@@ -86,6 +155,12 @@
 
     &__item {
         margin-bottom: 23px;
+
+        &--section-title {
+            margin-top: 29px;
+            color: #343643;
+            font-size: 16px;
+        }
 
         &--title {
             color: #9495A5;
@@ -102,17 +177,20 @@
         }
 
         &--sms-btn {
+            margin-top: 24px;
             position: absolute;
             right: 22px;
             color: #7948CE;
             font-size: 14px;
             cursor: pointer;
+            font-weight: 100;
         }
 
         &--sms-input {
             margin-bottom: 0;
             color: #9495A5;
             font-size: 14px;
+            font-weight: 100;
         }
     }
 }
@@ -142,6 +220,7 @@
 }
 
 .add-drive {
+    margin-top: 24px;
     display: flex;
     border: none;
     background: transparent;
@@ -161,4 +240,12 @@
     &.active {
         display: block;
     }
+}
+
+.yesorno {
+    display: none;
+}
+
+.js-driver-license {
+    display: none;
 }

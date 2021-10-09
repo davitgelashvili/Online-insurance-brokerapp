@@ -1,0 +1,137 @@
+<!-- input -->
+<div class="col-12">
+    <input type="text" class="login__input h-roman" placeholder="აირჩიე გამოშვების წელი" value="2019">
+</div><!-- end -->
+
+<!-- title -->
+<div class="col-12">
+    <div class="tab__item--section-title h-medium">
+        მძღოლის სქესი
+    </div>
+</div><!-- end -->
+
+<!-- radio -->
+<div class="col-12">
+    <label class="login__radio d-flex firago-cam js-radio-out">
+        <div>
+            <input type="radio" class="login__radio--input js-radio" name="gender">
+            <span class="login__radio--radioed">
+            </span>
+        </div>
+        <span class="login__radio--text h-roman">
+            მამაკაცი მძღოლი
+        </span>
+    </label>
+</div><!-- end -->
+
+<!-- checkbox -->
+<div class="col-12">
+    <label class="login__check d-flex firago-cam js-check-out">
+        <div>
+            <input type="checkbox" class="login__check--input js-check">
+            <span class="login__check--checked">
+                <img src="./img/svg/checkbox.svg" alt="">
+            </span>
+        </div>
+        <span class="login__check--text h-roman">
+            ავტოსაგზაო შემთხვევა 
+        </span>
+    </label>
+</div><!-- end -->
+
+<!-- select -->
+<div class="col-12">
+    <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+        <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+            <span class="placeholder login__select--text h-roman">
+                სათაური
+            </span>
+            <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+        </button>
+        <div class="dropdown-menu">
+            <ul class="list-unstyled">
+                <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                    თემა 1
+                </li>
+                <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                    თემა 2
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- end -->
+
+<!-- განვადება -->
+<div class="col-12">
+    <div class="ganvadeba">
+        <div class="col-12">აირჩიე გადახდის ფორმა</div>
+        <div class="col-12">
+            <label class="login__radio d-flex firago-cam">
+                <div>
+                    <input type="radio" class="login__radio--input" name="ganvadeba">
+                    <span class="login__radio--radioed">
+                    </span>
+                </div>
+                <span class="login__radio--text h-roman">
+                    ორჯერადი
+                </span>
+            </label>
+        </div><!-- end -->
+        <div class="col-12">
+            <label class="login__radio d-flex firago-cam">
+                <div>
+                    <input type="radio" class="login__radio--input" name="ganvadeba">
+                    <span class="login__radio--radioed">
+                    </span>
+                </div>
+                <span class="login__radio--text h-roman">
+                    ოთხჯერადი
+                </span>
+            </label>
+        </div><!-- end -->
+        <div class="col-12">
+            <label class="login__radio d-flex firago-cam">
+                <div>
+                    <input type="radio" class="login__radio--input" name="ganvadeba">
+                    <span class="login__radio--radioed">
+                    </span>
+                </div>
+                <span class="login__radio--text h-roman">
+                    ყოველთვიური
+                </span>
+            </label>
+        </div><!-- end -->
+    </div>
+</div><!-- end -->
+
+<!-- image upload -->
+<div class="col-4">
+    <label class="login__image d-flex flex-column align-items-center justify-content-center">
+        <input 
+            type="file" 
+            class="login__image--input h-roman" 
+            placeholder="ატვირთე ავტომობილის ტექ. პასპორტი"
+            onchange="fileUploadImage(this)">
+        <img src="img/svg/img-upload.svg" alt="">
+        <div class="login__image--name h-roman">
+            ატვირთე ფოტო
+        </div>
+        <img src="" alt="" class="login__image--upload">
+        <img src="img/svg/image-delete.svg" alt="" class="login__image--delete">
+    </label>
+</div><!-- end -->
+
+<!-- file upload -->
+<div class="col-12">
+    <label class="login__upload d-flex align-items-center justify-content-between">
+        <input 
+            type="file" 
+            class="login__upload--input h-roman" 
+            placeholder="ატვირთე ავტომობილის ტექ. პასპორტი"
+            onchange="fileUploadName(value)">
+        <div class="login__upload--name h-roman">
+            ატვირთე ავტომობილის ტექ. პასპორტი
+        </div>
+        <img src="img/svg/paperclip.svg" alt="">
+    </label>
+</div><!-- end -->

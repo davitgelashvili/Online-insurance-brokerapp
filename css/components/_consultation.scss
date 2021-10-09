@@ -62,3 +62,25 @@
         }
     }
 }
+
+.contact {
+    &__list {
+        padding-left: 140px;
+        border-left: 1px solid rgba(#9495A5, .16);
+
+        &--item {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        &--link {
+            color: #343643;
+            font-size: 16px;
+            text-decoration: none;
+
+            img {
+                margin-right: 24px;
+            }
+        }
+    }
+}

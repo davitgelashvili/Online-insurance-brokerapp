@@ -23,6 +23,10 @@ a:focus, a:hover {
 .btn.focus, .btn:focus, .btn:hover {
     color: 'unset';
 }
+label {
+    margin: 0;
+    font-weight: 100;
+}
 .btn {
     width: 100%;
     border-radius: 8px;
@@ -58,5 +62,24 @@ a:focus, a:hover {
 .page {
     &__title {
         margin-top: 77px;
+    }
+}
+
+.hover {
+    transition: .3s;
+
+    &--text {
+        padding: 0 60px 40px 60px;
+    }
+
+    &--image {
+        transition: .3s;
+        padding: 60px 60px 0 60px;
+    }
+
+    &:hover {
+        .hover--image {
+            padding: 0;
+        }
     }
 }

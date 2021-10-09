@@ -11,6 +11,19 @@
         box-shadow: 0px 3px 20px rgba(151, 153, 193, 0.13);
     }
 
+    &__active {
+        box-shadow: 0px 3px 20px rgba(151, 153, 193, 0.13);
+
+        &--back {
+            color: #343643;
+            font-size: 16px;
+            
+            img {
+                margin-right: 12px;
+            }
+        }
+    }
+
     &__menu {
         height: 100%;
 

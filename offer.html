@@ -12,40 +12,19 @@
     <title>BROKERAPP</title>
 </head>
 <body>
-    <header class="header d-flex align-items-center">
+    <header class="header header__active d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <div class="header__logo">
-                        <img src="img/main_logo.png" alt="">
-                    </div>
+                <div class="col-6 d-flex align-items-center justify-content-start">
+                    <a href="" class="header__active--back h-roman">
+                        <img src="img/svg/back-link.svg" alt="">
+                        უკან გასვლა
+                    </a>
                 </div>
-                <div class="col-10 d-flex align-items-center justify-content-end">
-                    <ul class="header__menu d-flex align-items-center">
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link caps-roman">ჩვენს შესახებ</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link caps-roman">სადაზღვევო კომპანიები</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="./products.html" class="header__menu--link caps-roman active">პროდუქტები</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link caps-roman">FAQ</a>
-                        </li>
-                        <li class="header__menu--item">
-                            <a href="" class="header__menu--link caps-roman">კონტაქტი</a>
-                        </li>
-                    </ul>
-                    <li class="header__lang">
-                        <a href="">
-                            <img src="img/svg/language.svg" alt="">
-                        </a>
-                    </li>
-                    <li class="header__login">
-                        <a href="" class="header__login--btn caps-roman">შესვლას</a>
-                    </li>
+                <div class="col-6 d-flex justify-content-end">
+                    <a href="">
+                        <img src="img/svg/cancel-link.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -53,25 +32,52 @@
 
     <div class="offer">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center section-title">
-                <h1 class="products__title title caps-medium">გაეცანი სიახლეებს</h1>
-                <button class="offer__support caps-medium">
-                    <img src="./img/svg/call-support.svg" alt=""> 
-                    დამიკავშირდით
-                </button>
+            <div class="row justify-content-between align-items-center section-title">
+                <div class="col-9">
+                    <h1 class="products__title title caps-medium">შეთავაზებები შენთვის</h1>
+                </div>
+                <div class="col-3">
+                    <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                        <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                            <span class="placeholder login__select--text h-roman">
+                                ჩემთვის საუკეთესო
+                            </span>
+                            <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="list-unstyled">
+                                <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                    თემა 1
+                                </li>
+                                <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                    თემა 2
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <a href="./offer-detail.html" class="offer__item">
+                    <div class="offer__item">
                         <div class="offer__item--status caps-medium">
-                            <img src="./img/svg/star.svg" alt="">
+                            <img src="./img/svg/heart.svg" alt="">
                             საუკეთესო
                         </div>
                         <figure class="offer__item--figure">
                             <img src="./img/sss.png" alt="" class="offer__item--img">
                         </figure>
-                        <div class="offer__item--price caps-medium">
-                            949.00 ₾
+                        <div class="offer__item--price-head h-roman">
+                            წელიწადში 987.00 ₾
+                        </div>
+                        <div class="offer__item--price caps-medium d-flex align-items-center justify-content-between">
+                            <div>
+                                84.00 ₾ <span class="h-medium">თვეში</span>
+                            </div>
+                            <div class="offer__item--star d-flex align-items-center">
+                                4.5
+                                <img src="img/svg/star-mini.svg" alt="">
+                            </div>
                         </div>
                         <div class="offer__item--title h-medium">
                             თიბისი დაზღვევა
@@ -80,22 +86,27 @@
                             შემთხვევითად გენერირებული ტექსტი ეხმარებოდა და შემქმნელებს, არის რეალურთან…
                         </div>
                         <div class="offer__item--foo d-flex justify-content-between align-items-center">
-                            <button class="offer__item--btn btn caps-medium">შენახვა</button>
+                            <a href="./offer-detail.html" class="offer__item--btn btn caps-medium">სრულად</a>
                             <img src="img/tbc-color.png" alt="">
                         </div>
-                    </a>
+                    </div>
                 </div><!-- item end -->
                 <div class="col-4">
-                    <a href="./offer-detail.html" class="offer__item">
-                        <div class="offer__item--status caps-medium">
-                            <img src="./img/svg/star.svg" alt="">
-                            საუკეთესო
-                        </div>
+                    <div class="offer__item">
                         <figure class="offer__item--figure">
                             <img src="./img/sss.png" alt="" class="offer__item--img">
                         </figure>
-                        <div class="offer__item--price caps-medium">
-                            949.00 ₾
+                        <div class="offer__item--price-head h-roman">
+                            წელიწადში 987.00 ₾
+                        </div>
+                        <div class="offer__item--price caps-medium d-flex align-items-center justify-content-between">
+                            <div>
+                                84.00 ₾ <span class="h-medium">თვეში</span>
+                            </div>
+                            <div class="offer__item--star d-flex align-items-center">
+                                4.5
+                                <img src="img/svg/star-mini.svg" alt="">
+                            </div>
                         </div>
                         <div class="offer__item--title h-medium">
                             თიბისი დაზღვევა
@@ -104,22 +115,27 @@
                             შემთხვევითად გენერირებული ტექსტი ეხმარებოდა და შემქმნელებს, არის რეალურთან…
                         </div>
                         <div class="offer__item--foo d-flex justify-content-between align-items-center">
-                            <button class="offer__item--btn btn caps-medium">შენახვა</button>
+                            <a href="./offer-detail.html" class="offer__item--btn btn caps-medium">სრულად</a>
                             <img src="img/tbc-color.png" alt="">
                         </div>
-                    </a>
+                    </div>
                 </div><!-- item end -->
                 <div class="col-4">
-                    <a href="./offer-detail.html" class="offer__item">
-                        <div class="offer__item--status caps-medium">
-                            <img src="./img/svg/star.svg" alt="">
-                            საუკეთესო
-                        </div>
+                    <div class="offer__item">
                         <figure class="offer__item--figure">
                             <img src="./img/sss.png" alt="" class="offer__item--img">
                         </figure>
-                        <div class="offer__item--price caps-medium">
-                            949.00 ₾
+                        <div class="offer__item--price-head h-roman">
+                            წელიწადში 987.00 ₾
+                        </div>
+                        <div class="offer__item--price caps-medium d-flex align-items-center justify-content-between">
+                            <div>
+                                84.00 ₾ <span class="h-medium">თვეში</span>
+                            </div>
+                            <div class="offer__item--star d-flex align-items-center">
+                                4.5
+                                <img src="img/svg/star-mini.svg" alt="">
+                            </div>
                         </div>
                         <div class="offer__item--title h-medium">
                             თიბისი დაზღვევა
@@ -128,22 +144,27 @@
                             შემთხვევითად გენერირებული ტექსტი ეხმარებოდა და შემქმნელებს, არის რეალურთან…
                         </div>
                         <div class="offer__item--foo d-flex justify-content-between align-items-center">
-                            <button class="offer__item--btn btn caps-medium">შენახვა</button>
+                            <a href="./offer-detail.html" class="offer__item--btn btn caps-medium">სრულად</a>
                             <img src="img/tbc-color.png" alt="">
                         </div>
-                    </a>
+                    </div>
                 </div><!-- item end -->
                 <div class="col-4">
-                    <a href="./offer-detail.html" class="offer__item">
-                        <div class="offer__item--status caps-medium">
-                            <img src="./img/svg/star.svg" alt="">
-                            საუკეთესო
-                        </div>
+                    <div class="offer__item">
                         <figure class="offer__item--figure">
                             <img src="./img/sss.png" alt="" class="offer__item--img">
                         </figure>
-                        <div class="offer__item--price caps-medium">
-                            949.00 ₾
+                        <div class="offer__item--price-head h-roman">
+                            წელიწადში 987.00 ₾
+                        </div>
+                        <div class="offer__item--price caps-medium d-flex align-items-center justify-content-between">
+                            <div>
+                                84.00 ₾ <span class="h-medium">თვეში</span>
+                            </div>
+                            <div class="offer__item--star d-flex align-items-center">
+                                4.5
+                                <img src="img/svg/star-mini.svg" alt="">
+                            </div>
                         </div>
                         <div class="offer__item--title h-medium">
                             თიბისი დაზღვევა
@@ -152,10 +173,10 @@
                             შემთხვევითად გენერირებული ტექსტი ეხმარებოდა და შემქმნელებს, არის რეალურთან…
                         </div>
                         <div class="offer__item--foo d-flex justify-content-between align-items-center">
-                            <button class="offer__item--btn btn caps-medium">შენახვა</button>
+                            <a href="./offer-detail.html" class="offer__item--btn btn caps-medium">სრულად</a>
                             <img src="img/tbc-color.png" alt="">
                         </div>
-                    </a>
+                    </div>
                 </div><!-- item end -->
             </div>
         </div>
@@ -189,7 +210,7 @@
                             <a href="" class="footer__menu--link h-roman">წესები და პირობები</a>
                         </li>
                         <li class="footer__menu--item">
-                            <a href="" class="footer__menu--link h-roman">COOKIES პოლიტიკა</a>
+                            <a href="" class="footer__menu--link h-roman">Cookies პოლიტიკა</a>
                         </li>
                     </ul>
                 </div>
