@@ -190,6 +190,28 @@ $(document).ready(function(){
         }
     });
 
+    $(".js-insource").change(function () {
+        if ($(this).is(":checked")) {
+            if ($(this).data('insource') == 'me' ) {
+                $('.insource-me').css('display','flex')
+                $('.insource-someone').css('display','none');
+                $('.insource-someone-me').css('display','none');
+            }else if ($(this).data('insource') == 'someone'){
+                $('.insource-me').css('display','none')
+                $('.insource-someone').css('display','flex');
+                $('.insource-someone-me').css('display','none');
+            }else {
+                $('.insource-me').css('display','none')
+                $('.insource-someone').css('display','none');
+                $('.insource-someone-me').css('display','flex');
+            }
+        } else {
+            $('.insource-me').css('display','none')
+            $('.insource-someone').css('display','none');
+            $('.insource-someone-me').css('display','none');
+        }
+    });
+
 });
 
 function changeYesOrNo(e){

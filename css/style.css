@@ -1440,6 +1440,10 @@ label {
   display: none;
 }
 
+.insource-for {
+  display: none;
+}
+
 .popup {
   width: 100%;
   height: 100%;
