@@ -21,7 +21,7 @@ a:focus, a:hover {
     border: unset;
 }
 .btn.focus, .btn:focus, .btn:hover {
-    color: 'unset';
+    color: unset;
 }
 label {
     margin: 0;
@@ -36,7 +36,7 @@ label {
         background-color: #7948CE;
         color: #fff;
 
-        &:hover {
+        &:hover, &:focus {
             color: #fff;
         }
     }
@@ -45,7 +45,7 @@ label {
         background-color: #fff;
         color: #7948CE;
 
-        &:hover {
+        &:hover, &:focus {
             color: #7948CE;
         }
     }
@@ -69,12 +69,12 @@ label {
     transition: .3s;
 
     &--text {
-        padding: 0 60px 40px 60px;
+        padding: 0 30px 40px 30px;
     }
 
     &--image {
         transition: .3s;
-        padding: 60px 60px 0 60px;
+        padding: 30px 30px 0 30px;
     }
 
     &:hover {
@@ -82,4 +82,30 @@ label {
             padding: 0;
         }
     }
+}
+
+input::-moz-placeholder{
+    color:#9495A5;
+    opacity:1
+}
+
+input:-ms-input-placeholder{
+    color:#9495A5;
+}
+
+input::-webkit-input-placeholder{
+    color:#9495A5;
+}
+
+textarea::-moz-placeholder{
+    color:#9495A5;
+    opacity:1
+}
+
+textarea:-ms-input-placeholder{
+    color:#9495A5;
+}
+
+textarea::-webkit-input-placeholder{
+    color:#9495A5;
 }

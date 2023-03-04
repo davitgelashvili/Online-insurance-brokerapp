@@ -1,0 +1,42 @@
+.sort {
+    &__item {
+        padding: 17px 20px;
+        border-radius: 8px;
+        list-style: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0 0 56px rgba(#9799C1, .16);
+
+            .sort__item--number{
+                border: 1px solid #5D5E69;
+                color: #343643;
+            }
+
+            .sort__item--title{
+                color: #343643;
+            }
+        }
+        
+        &--icon {
+            margin-right: 20px;
+        }
+
+        &--number {
+            padding: 6px 16px;
+            margin-right: 20px;
+            border-radius: 5px;
+            border: 1px solid #DEDFE4;
+            color: #9495A5;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &--title {
+            color: #5D5E69;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}

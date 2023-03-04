@@ -1,9 +1,16 @@
 .offer {
     margin-top: 60px;
 
+    &__container {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
     &__item {
         width: 100%;
         position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
         margin-bottom: 100px;
         display: block;
 
@@ -11,7 +18,7 @@
             display: flex;
             position: absolute;
             top: 30px;
-            left: -4px;
+            left: 25px;
             background-color: #7948CE;
             padding: 15px 20px;
             color: #fff;
@@ -113,6 +120,56 @@
 
         img {
             margin-right: 13px;
+        }
+    }
+
+    &__check {
+        cursor: pointer;
+        // margin-bottom: 25px;
+        position: absolute;
+        top: -12px;
+        right: 20px;
+
+        &--input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            background-color: #DEDFE4;
+
+            &:checked ~ .offer__check--checked {
+                background-color: #7948CE;
+                border: 1px solid #7948CE;
+
+                img {
+                    display: block;
+                }
+            }            
+        }
+
+        &--checked {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border: 1px solid #9495A5;
+            border-radius: 50%;
+
+            img {
+                display: none;
+            }
+        }
+
+        &--uncheck {
+            background-color: transparent;
+            color: #7948CE;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            cursor: pointer;
         }
     }
 }
@@ -262,12 +319,12 @@
 }
 
 .faq {
-    margin-left: -60px;
-    margin-right: -60px;
+    margin-left: -50px;
+    margin-right: -50px;
 
     &__item {
         width: 100%;
-        padding: 50px 60px 0 60px;
+        padding: 50px 50px 0 50px;
 
         &--icon {
             margin-top: 5px;

@@ -1,6 +1,6 @@
 <!-- input -->
 <div class="col-12">
-    <input type="text" class="login__input h-roman" placeholder="აირჩიე გამოშვების წელი" value="2019">
+    <input type="text" class="login__input h-roman" placeholder="აირჩიე გამოშვების წელი" value="">
 </div><!-- end -->
 
 <!-- title -->
@@ -48,7 +48,7 @@
             </span>
             <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu consultation__form--dropdown">
             <ul class="list-unstyled">
                 <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                     თემა 1
@@ -146,9 +146,9 @@
 
 <!-- rules -->
 <div class="col-12">
-    <label class="login__check d-flex firago-cam">
+    <label class="login__check d-flex firago-cam js-check-out">
         <div>
-            <input type="checkbox" class="login__check--input">
+            <input type="checkbox" class="login__check--input js-check">
             <span class="login__check--checked">
                 <img src="./img/svg/checkbox.svg" alt="">
             </span>
@@ -159,3 +159,21 @@
         </span>
     </label>
 </div><!-- end -->
+
+<!-- calendar -->
+<div class="col-12">
+    <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+        <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+            <span class="placeholder login__select--text h-roman">
+                აირჩიე დამზღვევის დაბადების თარიღი
+            </span>
+            <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+        </button>
+        <div class="dropdown-menu consultation__form--dropdown" style="max-width: 502px;">
+            <div class="calendar1"></div>
+        </div>
+    </div>
+</div><!-- end -->
+<!-- 
+    calendar('.calendar1')
+ -->

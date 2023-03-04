@@ -1,0 +1,38 @@
+.tpl {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+
+    &__item {
+        max-width: 440px;
+        width: 100%;
+        border: 14px;
+        
+        &:hover {
+            box-shadow: 0 6px 56px rgba(#9799C1, 0.16);
+        }
+
+        &--link {
+            padding: 83px 80px 93px 70px;
+            display: block;
+            text-decoration: none;
+        }
+
+        &--icon {
+            display: block;
+        }
+
+        &--title {
+            margin-top: 41px;
+            color: #343643;
+            font-size: 18px;
+        }
+
+        &--desc {
+            margin-top: 18px;
+            color: #5D5E69;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

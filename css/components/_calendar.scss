@@ -1,0 +1,71 @@
+.tavo-calendar {
+    text-align: center;
+    padding: 50px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__nav {
+        cursor: pointer;
+    }
+
+    &__month-label {
+        color: #343643;
+    }
+
+    &__week-names {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__weekday {
+        width: calc(100% / 7);
+        color: #9BA0B7;
+        font-size: 18px;
+    }
+
+    &__days {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__day {
+        width: calc(100% / 7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__day-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 16px;
+        color: #9BA0B7;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(#7948CE,.1);
+        }
+    }
+    &__day_abs-today {
+        .tavo-calendar__day-inner {
+            color: #7948CE;
+        }
+    }
+
+    &__day_select {
+        .tavo-calendar__day-inner {
+            background-color: rgba(#7948CE,.1) !important;
+            color: #7948CE;
+        }
+    }
+}

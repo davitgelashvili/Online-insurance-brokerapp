@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/components/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/components/carousel/owl.carousel.css">
+    <link rel="stylesheet" href="css/components/fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BROKERAPP</title>
+</head>
+<body>
+    <header class="header header__active d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center justify-content-start">
+                    <a href="" class="header__active--back h-roman">
+                        <img src="img/svg/back-link.svg" alt="">
+                        უკან გასვლა
+                    </a>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <a href="">
+                        <img src="img/svg/cancel-link.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- insurance -->
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center section-title">
+            <h1 class="products__page--title title caps-medium">ალფას დაზღვევა - TPL - პასუხისმგებლობის დაზღვევა</h1>
+        </div>
+        <div class="insurance d-flex">
+            <div class="insurance__tab">
+                <div class="insurance__tab--item d-flex align-items-start">
+                    <div class="insurance__tab--num-out d-flex justify-content-center">
+                        <div class="insurance__tab--line"></div>
+                        <div class="insurance__tab--num d-flex justify-content-center align-items-center">
+                            <div class="insurance__tab--num-in tab-js-active h-roman d-flex align-items-center justify-content-center">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurance__tab--title tab-js-active h-medium">
+                        დაზღვევის ინფორმაცია
+                    </div>
+                </div><!-- item end -->
+                <div class="insurance__tab--item d-flex align-items-start">
+                    <div class="insurance__tab--num-out d-flex justify-content-center">
+                        <div class="insurance__tab--line"></div>
+                        <div class="insurance__tab--num d-flex justify-content-center">
+                            <div class="insurance__tab--num-in tab-js-active h-roman d-flex align-items-center justify-content-center">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurance__tab--title tab-js-active h-medium">
+                        ავტომობილის ინფორმაცია
+                    </div>
+                </div><!-- item end -->
+                <div class="insurance__tab--item d-flex align-items-start">
+                    <div class="insurance__tab--num-out d-flex justify-content-center">
+                        <div class="insurance__tab--line"></div>
+                        <div class="insurance__tab--num d-flex justify-content-center">
+                            <div class="insurance__tab--num-in tab-js-active h-roman d-flex align-items-center justify-content-center">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurance__tab--title tab-js-active h-medium">
+                        დამზღვევის ინფორმაცია
+                    </div>
+                </div><!-- item end -->
+                <div class="insurance__tab--item d-flex align-items-start">
+                    <div class="insurance__tab--num-out d-flex justify-content-center">
+                        <div class="insurance__tab--num d-flex justify-content-center">
+                            <div class="insurance__tab--num-in tab-js-active h-roman d-flex align-items-center justify-content-center">
+                                4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insurance__tab--title tab-js-active h-medium">
+                        პოლისის შეძენა
+                    </div>
+                </div><!-- item end -->
+            </div>
+            <form id="regForm" class="insurance__form">
+                <div class="tab">
+                    <div class="row">
+                        <!-- input -->
+                        <div class="col-12">
+                            <input 
+                                type="text" 
+                                class="login__input h-roman yesorno-input" 
+                                placeholder="შეიყვანე ავტომობილის სარეგისტრაციო ნომერი" 
+                                value=""
+                                onkeyup="changeYesOrNo(value)">
+                        </div><!-- end -->
+                        <div class="yesorno">
+                            <div class="row">
+                                <!-- title -->
+                                <div class="col-12">
+                                    <div class="tab__item--section-title h-medium">
+                                        თანახმა ვარ ჩემი მონაცემები გადამოწმდეს მომსახურების სააგენტოში
+                                    </div>
+                                </div><!-- end -->
+
+                                <!-- radio -->
+                                <div class="col-12">
+                                    <label class="login__radio d-flex firago-cam js-radio-out">
+                                        <div>
+                                            <input type="radio" class="login__radio--input js-radio" name="gender">
+                                            <span class="login__radio--radioed">
+                                            </span>
+                                        </div>
+                                        <span class="login__radio--text h-roman">
+                                            დიახ
+                                        </span>
+                                    </label>
+                                </div><!-- end -->
+                                <!-- radio -->
+                                <div class="col-12">
+                                    <label class="login__radio d-flex firago-cam js-radio-out">
+                                        <div>
+                                            <input type="radio" class="login__radio--input js-radio" name="gender">
+                                            <span class="login__radio--radioed">
+                                            </span>
+                                        </div>
+                                        <span class="login__radio--text h-roman">
+                                            არა
+                                        </span>
+                                    </label>
+                                </div><!-- end -->
+                            </div>
+                        </div><!-- end -->
+                        <!-- input -->
+                        <div class="col-12">
+                            <input type="text" class="login__input h-roman" placeholder="ავტომობილის ვინ კოდი" value="">
+                        </div><!-- end -->
+                        <!-- select -->
+                        <div class="col-12">
+                            <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                    <span class="placeholder login__select--text h-roman">
+                                        ავტომობილის კატეგორია
+                                    </span>
+                                    <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                </button>
+                                <div class="dropdown-menu consultation__form--dropdown">
+                                    <ul class="list-unstyled">
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 1
+                                        </li>
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 2
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end -->
+                        <!-- select -->
+                        <div class="col-12">
+                            <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                    <span class="placeholder login__select--text h-roman">
+                                        ავტომობილის ტიპი
+                                    </span>
+                                    <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                </button>
+                                <div class="dropdown-menu consultation__form--dropdown">
+                                    <ul class="list-unstyled">
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 1
+                                        </li>
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 2
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end -->
+                        <!-- select -->
+                        <div class="col-12">
+                            <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                    <span class="placeholder login__select--text h-roman">
+                                        ავტომობილის მარკა
+                                    </span>
+                                    <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                </button>
+                                <div class="dropdown-menu consultation__form--dropdown">
+                                    <ul class="list-unstyled">
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 1
+                                        </li>
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 2
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end -->
+                        <!-- select -->
+                        <div class="col-12">
+                            <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                    <span class="placeholder login__select--text h-roman">
+                                        ავტომობილის მოდელი
+                                    </span>
+                                    <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                </button>
+                                <div class="dropdown-menu consultation__form--dropdown">
+                                    <ul class="list-unstyled">
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 1
+                                        </li>
+                                        <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
+                                            თემა 2
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- end -->
+                        <!-- input -->
+                        <div class="col-12">
+                            <input type="text" class="login__input h-roman" placeholder="აირჩიე გამოშვების წელი" value="">
+                        </div><!-- end -->
+                        <!-- file upload -->
+                        <div class="col-12">
+                            <label class="login__upload d-flex align-items-center justify-content-between">
+                                <input 
+                                    type="file" 
+                                    class="login__upload--input h-roman" 
+                                    placeholder="ატვირთე ავტომობილის ტექ. პასპორტი"
+                                    onchange="fileUploadName(value)">
+                                <div class="login__upload--name h-roman">
+                                    ატვირთე ავტომობილის ტექ. პასპორტი
+                                </div>
+                                <img src="img/svg/paperclip.svg" alt="">
+                            </label>
+                        </div><!-- end -->
+                    </div>
+                </div><!-- tab end -->
+                <div class="tab">
+                    <div class="row">
+                        <!-- title -->
+                        <div class="col-12">
+                            <div class="tab__item--section-title h-medium">
+                                ვისთვისაა დაზღვევა
+                            </div>
+                        </div><!-- end -->
+                        <!-- radio -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio js-insource" data-insource="me" name="vindaizgveva">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    ჩემთვის
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio js-insource" data-insource="someone-me" name="vindaizgveva">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    სხვისთვის
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                        <br />
+                        <div class="col-12 insource-for insource-me">
+                            <div class="row">
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="სახელი" value="">
+                                </div><!-- end -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="გვარი" value="">
+                                </div><!-- end -->
+                                <!-- select -->
+                                <div class="col-12">
+                                    <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                        <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                            <span class="placeholder login__select--text h-roman">
+                                                აირჩიე დამზღვევის დაბადების თარიღი
+                                            </span>
+                                            <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                        </button>
+                                        <div class="dropdown-menu consultation__form--dropdown" style="max-width: 502px;">
+                                            <div class="calendar1"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="ელფოსტა" value="">
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="ტელეფონის ნომერი" value="">
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="პირადი ნომერი" value="">
+                                </div><!-- end -->
+                                <!-- file upload -->
+                                <div class="col-12">
+                                    <label class="login__upload d-flex align-items-center justify-content-between">
+                                        <input 
+                                            type="file" 
+                                            class="login__upload--input h-roman" 
+                                            placeholder="ატვირთე ავტომობილის ტექ. პასპორტი"
+                                            onchange="fileUploadName(value)">
+                                        <div class="login__upload--name h-roman">
+                                            ატვირთე პირობები მოწმობა
+                                        </div>
+                                        <img src="img/svg/paperclip.svg" alt="">
+                                    </label>
+                                </div><!-- end -->
+                                
+                            </div>
+                        </div><!-- insource-me end -->
+
+                        <div class="col-12 insource-for insource-someone-me">
+                            <div class="row">
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="სახელი" value="">
+                                </div><!-- end -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="გვარი" value="">
+                                </div><!-- end -->
+                                <!-- select -->
+                                <div class="col-12">
+                                    <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
+                                        <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
+                                            <span class="placeholder login__select--text h-roman">
+                                                აირჩიე დამზღვევის დაბადების თარიღი
+                                            </span>
+                                            <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
+                                        </button>
+                                        <div class="dropdown-menu consultation__form--dropdown" style="max-width: 502px;">
+                                            <div class="calendar2"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="ელფოსტა" value="">
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="ტელეფონის ნომერი" value="">
+                                </div><!-- end -->
+                                <!-- input -->
+                                <div class="col-12">
+                                    <input type="text" class="login__input h-roman" placeholder="პირადი ნომერი" value="">
+                                </div><!-- end -->
+                                <!-- file upload -->
+                                <div class="col-12">
+                                    <label class="login__upload d-flex align-items-center justify-content-between">
+                                        <input 
+                                            type="file" 
+                                            class="login__upload--input h-roman" 
+                                            placeholder="ატვირთე ავტომობილის ტექ. პასპორტი"
+                                            onchange="fileUploadName(value)">
+                                        <div class="login__upload--name h-roman">
+                                            ატვირთე პირობები მოწმობა
+                                        </div>
+                                        <img src="img/svg/paperclip.svg" alt="">
+                                    </label>
+                                </div><!-- end -->
+                            </div>
+                        </div><!-- insource-someone-me end -->
+                    </div>
+                </div><!-- tab end -->
+                <div class="tab">
+                    <div class="down-up__item insurance__info d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13.273" height="7.909" viewBox="0 0 13.273 7.909">
+                            <path id="Path_17100" data-name="Path 17100" d="M12,0,6,6,0,0" transform="translate(0.636 0.636)" fill="none" stroke-width="1.8"/>
+                        </svg>
+                        <div class="insurance__info--item">
+                            <div class="insurance__info--head down-up--head d-flex align-items-center h-roman justify-content-between" data-head="0">
+                                პოლისის ინფორმაცია
+                                <img src="img/svg/pen.svg" alt="">
+                            </div>
+                            <div class="insurance__info--body down-up--body h-roman" data-body="0">
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        პოლისის ნომერი
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        AB018383
+                                    </div>
+                                </div>
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        დაზღვევის საწყისი თარიღი
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        20.09.2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="down-up__item insurance__info d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13.273" height="7.909" viewBox="0 0 13.273 7.909">
+                            <path id="Path_17100" data-name="Path 17100" d="M12,0,6,6,0,0" transform="translate(0.636 0.636)" fill="none" stroke-width="1.8"/>
+                        </svg>
+                        <div class="insurance__info--item">
+                            <div class="insurance__info--head down-up--head d-flex align-items-center h-roman justify-content-between" data-head="1">
+                                ძირითადი დაფარვები
+                                <img src="img/svg/pen.svg" alt="">
+                            </div>
+                            <div class="insurance__info--body down-up--body h-roman" data-body="1">
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        ფრანჩიზა
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        ფრანჩიზით
+                                    </div>
+                                </div>
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        დაზღვევის რისკები
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        <p>ავტოსაგზაო შემთხვევა</p>
+                                        <p>ქურდობა, ძარცვა, ყაჩაღობა, ვანდალიზმი</p>
+                                        <p>სტიქიური მოვლენები</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="down-up__item insurance__info last d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13.273" height="7.909" viewBox="0 0 13.273 7.909">
+                            <path id="Path_17100" data-name="Path 17100" d="M12,0,6,6,0,0" transform="translate(0.636 0.636)" fill="none" stroke-width="1.8"/>
+                        </svg>
+                        <div class="insurance__info--item">
+                            <div class="insurance__info--head down-up--head d-flex align-items-center h-roman justify-content-between" data-head="2">
+                                ავტომობილის ინფორმაცია
+                                <img src="img/svg/pen.svg" alt="">
+                            </div>
+                            <div class="insurance__info--body down-up--body h-roman" data-body="2">
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        ავტომობილის სარეგისტრაციო ნომერი
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        NN-376-BR
+                                    </div>
+                                </div>
+                                <div class="insurance__info--body-in d-flex align-items-start justify-content-between">
+                                    <div class="insurance__info--title h-roman">
+                                        ავტომობილის ტექ. პასპორტი
+                                    </div>
+                                    <div class="insurance__info--desc h-roman">
+                                        <p><a href="">document1234.pdf</a></p>
+                                        <p><a href="">foto.pdf</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- item end -->
+                    <div class="row">
+                        <!-- send sms -->
+                        <div class="col-12">
+                            <label class="tab__item--sms d-flex align-items-center justify-content-end">
+                                <input type="text" class="login__input h-roman tab__item--sms-input h-roman" placeholder="შეიყვანე SMS კოდი">
+                                <div class="tab__item--sms-btn h-roman">SMS კოდის გაგზავნა</div>
+                            </label>
+                        </div><!-- end -->
+                        <!-- rules -->
+                        <div class="col-12">
+                            <label class="login__check d-flex firago-cam js-check-out">
+                                <div>
+                                    <input type="checkbox" class="login__check--input js-check">
+                                    <span class="login__check--checked">
+                                        <img src="./img/svg/checkbox.svg" alt="">
+                                    </span>
+                                </div>
+                                <span class="login__check--text h-roman">
+                                    ვეთანხმები 
+                                    <a href="">წესებს და პირობებს</a>
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                    </div>
+                </div><!-- tab end -->
+                <div class="tab">
+                    <div class="row">
+                        <!-- title -->
+                        <div class="col-12">
+                            <div class="tab__item--section-title h-medium">
+                                სულ გადასახდელი თანხა <span style="color: #FF4646;">949.00 ₾</span>
+                            </div>
+                        </div><!-- end -->
+                        <!-- radio -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio" name="gender">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    ბარათით გადახდა
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                        <!-- radio -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio" name="gender">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    გადარიცხვით გადახდა
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                        <!-- radio -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio" name="gender">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    განვადებით გადახდა
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                        <!-- radio -->
+                        <div class="col-12">
+                            <label class="login__radio d-flex firago-cam js-radio-out">
+                                <div>
+                                    <input type="radio" class="login__radio--input js-radio" name="gender">
+                                    <span class="login__radio--radioed">
+                                    </span>
+                                </div>
+                                <span class="login__radio--text h-roman">
+                                    ბალანსით გადახდა
+                                </span>
+                            </label>
+                        </div><!-- end -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6" id="prevBtn">
+                        <button type="button" class="btn login__btn insurance__form--btn btn--light caps-medium" onclick="nextPrev(-1)">უკან</button>
+                    </div>
+                    <div class="col-6" id="nextBtn">
+                        <button type="button" class="btn login__btn btn--blue caps-medium" id="nextBtnText" onclick="nextPrev(1)">შემდეგი</button>
+                    </div>
+                </div>
+            </form><!-- form end -->
+        </div>  
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex flex-column align-items-start">
+                    <img src="img/main_logo.png" alt="">
+                    <span class="footer__text h-roman">
+                        Copyrights©2020 brokerage.ge by
+                        <span class="footer__text--by"><a href="http://proway.ge/" target="_blank">Proway</a></span>
+                    </span>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-end">
+                    <ul class="footer__soc d-flex">
+                        <li class="footer__soc--item">
+                            <a href="" class="footer__soc--link"><img src="./img/svg/inst.svg" alt=""></a>
+                        </li>
+                        <li class="footer__soc--item">
+                            <a href="" class="footer__soc--link"><img src="./img/svg/fb.svg" alt=""></a>
+                        </li>
+                        <li class="footer__soc--item">
+                            <a href="" class="footer__soc--link"><img src="./img/svg/in.svg" alt=""></a>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu d-flex">
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link h-roman">წესები და პირობები</a>
+                        </li>
+                        <li class="footer__menu--item">
+                            <a href="" class="footer__menu--link h-roman">Cookies პოლიტიკა</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/select/bootstrap-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" ></script>
+    <script src="js/tavo-calendar.js"></script>
+    <script src="js/select/bundle.min.js"></script>
+    <script src="js/select/livefilter.min.js"></script>
+    <script src="js/select/tabcomplete.min.js"></script>
+    <script src="js/function.js"></script>    
+    <script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "flex";
+  }
+//   if (n == (x.length - 1)) {
+//     document.getElementById("nextBtnText").innerHTML = "Submit";
+//   } else {
+//     document.getElementById("nextBtnText").innerHTML = "Next";
+//   }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    // ეს ქვედა კომენტარი გამოიყენება შემოწმებისას... 
+    // if (y[i].value == "") 
+    if (y[i].value == true) {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("insurance__tab--item")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("insurance__tab--item");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+calendar('.calendar1')
+calendar('.calendar2')
+    </script>
+</body>
+</html>

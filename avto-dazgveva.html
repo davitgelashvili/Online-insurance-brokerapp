@@ -342,7 +342,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -362,7 +362,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -398,7 +398,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -418,7 +418,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -438,7 +438,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -458,7 +458,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -557,7 +557,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -571,14 +571,14 @@
                         </div><!-- end -->
                         <div class="col-12">
                             <div id="bts-ex-5" class="selectpicker login__select" data-clear="true" data-live="true">
-                                <button data-id="prov" type="button" class="btn btn-lg btn-block dropdown-toggle login__select--btn d-flex justify-content-between">
+                                <button data-id="prov" type="button" class="dropdown-toggle login__select--btn d-flex justify-content-between">
                                     <span class="placeholder login__select--text h-roman" id="calendar-date">
                                         მართვის მოწმობის აღების თარიღი
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
-                                   date input
+                                <div class="dropdown-menu consultation__form--dropdown" style="max-width: 502px;">
+                                    <div class="calendar1"></div>
                                 </div>
                             </div>
                         </div><!-- end -->
@@ -590,7 +590,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -673,7 +673,7 @@
                                     </span>
                                     <span class=""><img src="img/svg/select-arrow.svg" alt=""></span>
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu consultation__form--dropdown">
                                     <ul class="list-unstyled">
                                         <li class="filter-item items login__select--item h-roman" data-filter="2" data-value="2">
                                             თემა 1
@@ -800,6 +800,9 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/select/bootstrap-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" ></script>
+    <script src="js/tavo-calendar.js"></script>
     <script src="js/select/bundle.min.js"></script>
     <script src="js/select/livefilter.min.js"></script>
     <script src="js/select/tabcomplete.min.js"></script>
@@ -877,6 +880,8 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+calendar('.calendar1')
     </script>
 </body>
 </html>

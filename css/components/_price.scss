@@ -1,0 +1,107 @@
+.price {
+    padding-bottom: 150px;
+
+    &__item {
+        // width: max-content;
+        width: 100%;
+        position: relative;
+        background-color: transparent;
+        padding: 30px;
+
+        &--btn {
+            display: none;
+            padding: 17px 32px;
+            background-color: #7948CE;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            background-color: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 56px rgba(#9799C1, .16);
+
+            &.border-right::before{
+                display: none;
+            }
+        }
+
+        &:hover > &--btn {
+            display: block;
+        }
+
+        &.border-right::before {
+            content: "";
+            width: 1px;
+            height: 86%;
+            right: -20px;
+            position: absolute;
+            display: block;
+            background-color: #DEDFE4;
+        }
+    }
+
+    &__services {
+        margin-bottom: 27px;
+
+        &--title {
+            margin-bottom: 8px;
+            color: #343643;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &--desc {
+            margin-bottom: 2px;
+            color: #9495A5;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__head{
+        margin-bottom: 27px;
+
+        &--title {
+            color: #343643;
+            font-size: 18px;
+        }
+
+        &--price {
+            color: #7948CE;
+            font-size: 40px;
+        }
+
+        &--desc {
+            color: #343643;
+            font-size: 14px;
+        }
+
+        &--logo {
+            width: 100%;
+            height: 60px;
+            padding: 18px 33px;
+            margin-bottom: 30px;
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+
+    &__body {
+        margin-bottom: 27px;
+
+        &--desc {
+            margin-bottom: 8px;
+            color: #5D5E69;
+            font-size: 14px;
+        }
+    }
+}
